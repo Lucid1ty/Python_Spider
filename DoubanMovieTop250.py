@@ -3,14 +3,14 @@
 # @Author : Lucidity
 # @File : spider(douban).py
 # @Software: PyCharm
-#mainURL:https://movie.douban.com/top250
+# mainURL:https://movie.douban.com/top250
 from bs4 import BeautifulSoup           # 网页解析，获取数据
 import re       # 正则表达式，进行文字匹配
 import urllib.request,urllib.error      # 制定URL，获取网页数据
 import xlwt     # 进行excel操作
 import sqlite3  # 进行SQLite数据操作
 
-#主函数
+# 主函数
 def main():
     baseurl = "https://movie.douban.com/top250?start="
     datalist = getData(baseurl)     # 利用getData（）函数来得到网页中的数据
@@ -43,7 +43,7 @@ findBd = re.compile(r'<p class="">(.*?) </p>',re.S)
 
 
 
-#爬取网页
+# 爬取网页
 def getData(baaeurl):
     datalist =[]
     # 写个for循环来得到豆瓣电影top250的所有页面，总共拿到了10页（一页有25个电影）
