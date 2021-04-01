@@ -1,5 +1,5 @@
 # Python_Spider
-SteamGameHistoryPrice.py一个爬取steam游戏历史价格的爬虫（未完成），它有三个阶段：
+SteamGameHistoryPrice.py是一个爬取steam游戏历史价格的爬虫（未完成），它有三个阶段：
 
 一：获取所有游戏的APP-ID(这样就可以构造出所有游戏页面的url)
 二：利用selenium依次访问每一个游戏页面
